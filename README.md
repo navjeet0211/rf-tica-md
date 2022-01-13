@@ -25,10 +25,10 @@ I am using Anaconda (Python 3.6) and the following packages:
 - ```t4l_image.com``` - UCSF Chimera script to visulaize the T4L protein
 
 ### preparing data and adapting script
-1. prepare raw collective varibale using msmbuilder script.
+1. Prepare raw collective varibale using msmbuilder script.
 2. Catenate all the numpy files and rename it to X_3_trajs.npy
 3. Calculate distance between cavity COM and ligand (benzene) COM
-4. Catenate all distance files in the same order of X.npy and convert it into binary format 0 and 1 using distance cutoff criteria. Rename this file as Y_3_trajs.npy.
+4. Catenate all distance files in the same order of X_3_trajs.npy and convert it into binary format 0 and 1 using distance cutoff criteria. Rename this file as Y_3_trajs.npy.
 5. Build RF Classifier Model using script_randomforrest.py
 6. Use this model for further analysis
 
