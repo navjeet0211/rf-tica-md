@@ -11,7 +11,8 @@ I am using Anaconda (Python 3.6) and the following packages:
 ## Files
 - ```run_pair_distances.sh``` - bash script to calculate distances between given pairs using msmbuilder package
 - ```contact_pairs.txt``` - contact pairs used in in msmbuilder 
-- ```script_randomforrest.py``` - python script to build the Random Forest Classifier Model
+- ```script_randomforest.py``` - python script to build the Random Forest Classifier Model
+- ```xgboost.py``` - python script to build XGBoost model for classification 
 - ```selected_pairs2npy.py``` - Python script to extract the selected pairs identified from RF Classifier
 - ```Top200_residue_pairs``` - Top 200 pairs from the RF Classifier Model of T4L system
 - ```plot_tica.py``` - Python script to plot the free energy surface
@@ -32,3 +33,22 @@ I am using Anaconda (Python 3.6) and the following packages:
 5. Build RF Classifier Model using script_randomforrest.py
 6. Use this model for further analysis
 
+### Generating Network Images using vmd, ref.pdb, and tcl scripts
+```
+$ vmd -e traj1_pairs_1-2.tcl ref.pdb
+
+```
+![img](./traj1_network.png)
+
+```
+$ vmd -e traj2_pairs_1-2.tcl ref.pdb
+
+```
+![img](./traj2_network.png)
+
+
+```
+$ vmd -e traj3_pairs_1-2.tcl ref.pdb
+
+```
+![img](./traj3_network.png)
