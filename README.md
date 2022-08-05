@@ -34,21 +34,11 @@ I am using Anaconda (Python 3.6) and the following packages:
 6. Use this model for further analysis
 
 ### Generating Network Images using vmd, ref.pdb, and tcl scripts
-```
-$ vmd -e traj1_pairs_1-2.tcl ref.pdb
-
-```
+``` $ vmd -e traj1_pairs_1-2.tcl ref.pdb  ```
 ![img](./traj1_network.png)
 
-```
-$ vmd -e traj2_pairs_1-2.tcl ref.pdb
-
-```
+```$ vmd -e traj2_pairs_1-2.tcl ref.pdb```
 ![img](./traj2_network.png)
 
-
-```
-$ vmd -e traj3_pairs_1-2.tcl ref.pdb
-
-```
+```$ vmd -e traj3_pairs_1-2.tcl ref.pdb```
 ![img](./traj3_network.png)
